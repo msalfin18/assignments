@@ -62,10 +62,11 @@ class MusicPlayer extends StatelessWidget {
           SliverPadding(
             padding: const EdgeInsets.all(50.0),
             sliver: SliverGrid(
+
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                crossAxisSpacing: 50,
-                mainAxisSpacing: 50,
+               crossAxisSpacing: 50,
+              mainAxisSpacing: 50,
               ),
               delegate: SliverChildBuilderDelegate(
                     (BuildContext context, int index) {
