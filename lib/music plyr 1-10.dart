@@ -12,7 +12,7 @@ class MusicPlay extends StatelessWidget {
     'dian',
     'wiz',
     'Emi',
-    'ARR',
+    'ARR'
     'ARR'
   ];
   var title = [
