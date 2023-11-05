@@ -1,4 +1,4 @@
-List<Map<String , dynamic>> places=[
+List<Map<String,dynamic>> places=[
 {
 "price" :10000,
 "image":"assets/images/taj.jpg",
@@ -23,4 +23,5 @@ List<Map<String , dynamic>> places=[
 "price" :555555,
 "image":"assets/images/parlament.jpg",
 "description":"parlament",
-},];
+},
+];

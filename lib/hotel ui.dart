@@ -1,46 +1,49 @@
-import 'package:assignments/tourism%20app/screen/8%20payments.dart';
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home:Explore()));
+  runApp(MaterialApp(home:Hotel_ui()));
 }
-class Explore extends StatelessWidget {
+
+class Hotel_ui extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
+    return  Scaffold(
+      // appBar: AppBar(backgroundColor: Colors.black,),
+      body:
+        Stack(
           children:[
             ListView(
-              children: [
-                Stack(
-                    children:[ Container(
-                        child: Image.asset("assets/images/hotels.jpeg")),
-                      Positioned(
-                        bottom: 50,
-                        left: 10,
-                        child: Text('HOUSE BOAT \n KOCHIN,KERALA',style: TextStyle(fontSize:30,color: Colors.white,fontWeight: FontWeight.bold),),
+            children: [
+              Stack(
+                children:[ Container(
+                    child: Image.asset("assets/images/hotels.jpeg")),
+                  Positioned(
+                    bottom: 50,
+                    left: 10,
+                    child: Text('HOUSE BOAT \n KOCHIN,KERALA',style: TextStyle(fontSize:30,color: Colors.white,fontWeight: FontWeight.bold),),
+                  ),
+                  Positioned(
+                    bottom: 20,
+                    left: 10,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(2),
+                      child: Card(
+                        color: Colors.grey,
+                        child: Container(
+                          height: 25,
+                          width: 150,
+                          child: Container(child: Center(child: Text("8.4/85 reviews",style: TextStyle(color: Colors.white),))),
+                        ),
                       ),
-                      Positioned(
-                          bottom: 20,
-                          left: 10,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(2),
-                            child: Card(
-                              color: Colors.grey,
-                              child: Container(
-                                height: 25,
-                                width: 150,
-                                child: Container(child: Center(child: Text("8.4/85 reviews",style: TextStyle(color: Colors.white),))),
-                              ),
-                            ),
-                          )
-                      ),
-                      Positioned(
-                          bottom: 20,
-                          right: 10,
-                          child: Icon(Icons.favorite_border,color: Colors.white,size: 35,))
-                    ])
-              ],
-            ),
+                    )
+                  ),
+                  Positioned(
+                      bottom: 20,
+                      right: 10,
+                     child: Icon(Icons.favorite_border,color: Colors.white,size: 35,))
+                ])
+            ],
+          ),
             Positioned(
                 bottom:370,
                 left: 10,
@@ -139,7 +142,8 @@ class Explore extends StatelessWidget {
                 ),
               ),
             )
-          ]
-      ) );
+    ]
+        )
+    );
   }
 }

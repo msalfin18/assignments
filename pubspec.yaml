@@ -96,6 +96,7 @@ flutter:
     - assets/images/himalsys.jpg
     - assets/images/alappy.jpg
     - assets/images/Google-Pay-Logo-768x483.jpg
+    - assets/images/hotels.jpeg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
